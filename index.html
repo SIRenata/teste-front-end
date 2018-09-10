@@ -10,25 +10,30 @@
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    
-  </head>
-  <body>
-	<main>
-		<div class="container">
-			<form id="search-form" class="col s12 center">
-				<input type="text" id="search-film-input" placeholder="Pesquisar" class="col s10">
-				<button type="submit" id="search-film-submit" class="col s2 btn"> <i class="material-icons">search</i> </button>
-			</form>
-		</div>	
-		<article class="row container" id="container">
+    <script src="js/pagination.min.js"></script>
+				
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<form id="search-form" class="col s12 center">
+					<input type="text" id="search-film-input" placeholder="Pesquisar" class="col s10">
+					<button type="submit" id="search-film-submit" class="col s2 btn"> <i class="material-icons">search</i> </button>
+				</form>
+			</div>	
+			<article class="row container" id="container">
+				<!-- Resultados -->
+			</article>
 			
-		</article>
+			<div class="col s12 center" id="results">
+				<!-- Paginação -->
+			</div>
+
+			<script src="js/application.js"></script>
 		
-		<script src="js/application.js"></script>
-		
-	</main>
-	<footer class="page-footer">
-		Designed by: Renata Augusto
-	</footer>
-  </body>
+		</main>
+		<footer class="page-footer">
+			Designed by: Renata Augusto
+		</footer>
+	</body>
 </html>
