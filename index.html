@@ -10,19 +10,23 @@
 	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    
+	<script src="js/pagination.js"></script>    
   </head>
   <body>
 	<main>
-		<div class="container">
+		<div class="container js-container-form container-form">
 			<form id="search-form" class="col s12 center">
 				<input type="text" id="search-film-input" placeholder="Pesquisar" class="col s10">
 				<button type="submit" id="search-film-submit" class="col s2 btn"> <i class="material-icons">search</i> </button>
 			</form>
 		</div>	
+		
 		<article class="row container" id="container">
-			
+			<!-- Results -->
 		</article>
+		<div class="col s12 center" id="results">
+			<!-- Pagination -->
+		</div>
 		
 		<script src="js/application.js"></script>
 		

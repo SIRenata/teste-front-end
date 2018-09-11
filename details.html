@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Teste iCasei: Front-End</title>
+	
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	
+	</head>
+	<body>
+		<main>
+			<!--<div class="row container js-container-form container-form">
+				<form id="search-form" class="col s12 center">
+					<input type="text" id="search-film-input" placeholder="Pesquisar" class="col s11 input-search">
+					<button type="submit" id="search-film-submit" class="col s1 btn"> <i class="material-icons">search</i> </button>
+				</form>
+			</div>	 -->
+			
+			
+
+			<script>
+			
+
+				// Load the IFrame Player API code asynchronously.
+				var tag = document.createElement('script');
+				tag.src = "https://www.youtube.com/player_api";
+				var firstScriptTag = document.getElementsByTagName('script')[0];
+				firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+				// Replace the 'ytplayer' element with an <iframe> and
+				// YouTube player after the API code downloads.
+				var player;
+				function onYouTubePlayerAPIReady() {
+					player = new YT.Player('ytplayer', {
+						height: '360',
+						width: '640',
+						videoId: 'VHwI0KYvIS4',
+						events: {
+							'onReady': onPlayerReady
+						}
+					});
+				}
+			  
+				function onPlayerReady(event) {
+					event.target.playVideo();
+				}
+			</script>
+			
+			<div class="row col s6 container center" id="details">
+				<h1>
+					Titulo do video
+				</h1>
+				<div class="col s12 center">
+					<div id="ytplayer"></div>
+				</div>
+				<div class="row container col s6">
+					<div class="col s8 text-left no-padding-left">
+						Nome do canal
+					</div>
+					<div class="col s2">
+						<i class="material-icons">thumb_up</i>
+						9999999999
+					</div>
+					<div class="col s2">
+						<i class="material-icons">thumb_down</i>
+						9999999999
+					</div>
+				</div>
+				<div class="row col s8 text-left" id="desc">
+					DESDCDIJCODSJCOIJASJXSAIDJ
+				</div>
+				<div class="row col s12 text-left" id="views">
+					<i class="material-icons">remove_red_eye</i>
+				</div>
+			</div>
+
+			<script src="js/application.js"></script>
+		
+		</main>
+		<footer class="page-footer">
+			Designed by: Renata Augusto
+		</footer>
+	</body>
+</html>
